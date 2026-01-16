@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Praca dyplomowa – Aleksandra Lewińska</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+        }
+        header {
+            background: #1f2937;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #374151;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #38bdf8;
+        }
+        main {
+            padding: 40px;
+	    padding-bottom: 80px;
+            text-align: center;
+        }
+        footer {
+            background: #1f2937;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        audio {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Przyszła praca dyplomowa</h1>
+    <p>Aleksandra Lewińska | Data: <span id="data"></span></p>
+</header>
+
+<nav>
+    <a href="#">Strona główna</a>
+    <a href="#">Domena aplikacji</a>
+    <a href="#">Projekt</a>
+    <a href="#">Implementacja</a>
+    <a href="#">Kontakt</a>
+</nav>
+
+<main>
+    <h2>Makieta aplikacji</h2>
+    <p>Strona prezentuje koncepcję przyszłej pracy dyplomowej dotyczącej procesu tworzenia gry komputerowej z perspektywy Technical Artist.</p>
+
+    <audio controls>
+        <source src="muzyka.mp3" type="audio/mpeg">
+        
+    </audio>
+
+    </main>
+
+<footer>
+    © 2026 Aleksandra Lewińska – WSB Merito Warszawa
+</footer>
+
+<script>
+    const today = new Date();
+    document.getElementById("data").textContent = today.toLocaleDateString('pl-PL');
+</script>
+
+</body>
+</html>
